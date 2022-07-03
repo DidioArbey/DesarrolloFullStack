@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Ángeles</title>
+<script type="text/javascript">
+function mostrarMensaje1() {
+var angel;
+angel = prompt ('Por favor introduce nombre del angel:')
+if (angel =="") { alert ('No has escrito el nombre de tu angel'); }
+    switch  (angel) {
+            case "miguel": alert ("Tienes el angel de la protección"); break;
+            case "uriel": alert ("Tienes el angel de la prosperidad");
+            case "rafael": alert ("Tienes el angel de la sanación"); break;
+            default: alert ("No es un angel"); break;
+        }
+}
+</script>
+</head>
+<body>
+    <div>
+        <p>Aquí un párrafo de texto situado antes de la imagen, dentro de un div contenedor</p>
+            <img onclick="mostrarMensaje1()" src="https://laverdadnoticias.com/__export/1622919438427/sites/laverdad/img/2021/06/05/diferencia_entre_arcangeles_y_angeles_segun_la_biblia_2.jpg_1172260586.jpg" alt="Angel" title="Angel, un útil editor de texto">
+        <p onclick ="alert('Alerta JavaScript')" style="color: #D2691E;">Aquí otro párrafo de texto. JavaScript es un lenguaje utilizado para dotar de efectos dinámicos a las páginas web.
+        </p>
+    </div>
+</body>
+</html>
+

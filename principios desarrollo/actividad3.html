@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Basica</title>
+    <style>
+        .divmax{
+        border: 5px outset rgb(0, 0, 0);
+        background-color: rgb(243, 246, 247);
+        text-align: center;
+        padding: 100px 50px ;
+        width: 500px;
+        height: 300px;
+        justify-content: center;
+        position: absolute;
+        left: 40%;
+        }
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #0d97f3;
+        border: none;
+        border-radius: 13px;
+        }
+    </style>
+    <script>
+        function sumar(){
+            var numero1= Number(document.getElementById('numero1').value);
+            var numero2= Number(document.getElementById('numero2').value);
+            var resultado = numero1 + numero2;
+            document.getElementById('resultado').value=resultado;
+        }
+        function restar(){
+            var numero1= Number(document.getElementById('numero1').value);
+            var numero2= Number(document.getElementById('numero2').value);
+            var resultado = numero1 - numero2;
+            document.getElementById('resultado').value=resultado;
+        }
+        function multiplicar(){
+            var numero1= Number(document.getElementById('numero1').value);
+            var numero2= Number(document.getElementById('numero2').value);
+            var resultado = numero1 * numero2;
+            document.getElementById('resultado').value=resultado;
+        }
+        function dividir(){
+            var numero1= Number(document.getElementById('numero1').value);
+            var numero2= Number(document.getElementById('numero2').value);
+            var resultado = numero1 / numero2;
+            document.getElementById('resultado').value=resultado;
+        }
+    </script>
+</head>
+<body>
+    <div class="divmax" align-center>
+        <h1>Calculadora Básica</h1>
+        <label>Número 1:</label> <input type="text" id = "numero1"><br><br>
+        <label>Número 2:</label> <input type="text" id = "numero2"><br><br>
+        <input type="button" class="button" name="suma" value="Sumar" onclick="sumar()">
+        <input type="button" class="button" name="resta" value="Restar" onclick="restar()">
+        <input type="button" class="button" name="multiplicacion" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" class="button" name="dividir" value="Dividir" onclick="dividir()"><br><br><br>
+        <label>Resultado: </label> <br><br><br>
+        <input type="number" id = "resultado"><br><br>
+    </div>
+</body>
+</html>

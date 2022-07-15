@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Formulario validacion</title>
+</head>
+
+<body>
+    <div class="field is-horizontal">
+        <h1>Formulario de validación de PHP</h1>
+        <div class="field">
+            <div method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <label class="label">Nombre :</label>
+                <div class="control">
+                    <input class="input is-primary" type="text" placeholder="Nombre" name="nombre" required>
+                </div>
+
+                <div class="field">
+                    <label class="label">E-mail :</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-primary" type="email" placeholder="ingresar e-mail" name="email" >
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Website :</label>
+                    <div class="control">
+                        <input class="input is-primary" type="text" placeholder="Sitio Web" name="website">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Comentario :</label>
+                    <div class="control">
+                        <textarea class="textarea is-primary" placeholder="Textarea" name="comentario"></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Genero :</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="genero" value="femenino" required>
+                            Femenino
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="genero" value="masculino" required>
+                            Masculino
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field is-grouped is-grouped-centered">
+                    <div class="control">
+                        <button class="button is-link" name="enviar" value="enviar">Enviar</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link is-light">Cancelar</button>
+                    </div>
+                </div>
+
+                <!-- Nombre:         <input class="input is-primary"     type="text" name="nombre" required><br><br>
+                E-mail:         <input      type="text" name="email" required><br><br>
+                Website:        <input      type="text" name="website" ><br><br>
+                Comentario:<br> <textarea   name="comentario" rows="4" cols="50"></textarea><br><br>
+                Genero:         <input      type="radio" name="genero" value="femenino" required> Femenino <input type="radio" name="genero" value="masculino" required> Masculino<br><br>
+                <input class="textarea" type="submit" name="enviar" value="enviar"> -->
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

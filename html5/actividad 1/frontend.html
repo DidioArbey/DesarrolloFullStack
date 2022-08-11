@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS framework bulma  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Actividad 5</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="menu is-fixed-top navbar  is-large ">
+            <div class="navbar-start">
+                <!-- navbar items -->
+                <a class="navbar-item" href="./programador.html">
+                    Programador
+                </a>
+                <a class="navbar-item" href="./desarrollador.html">
+                    Desarrollador
+                </a>
+                <a class="navbar-item" href="./backend.html">
+                    Back-end
+                </a>
+                <a class="navbar-item" href="./frontend.html">
+                    Front-end
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1 class="title">Front-End</h1>
+        <div class="columns">
+            <div class="column ">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by2">
+                            <img src="./img/front.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content ">
+                        <div class="media is-half">
+                            <div class="media-center">
+                            </div>
+                            <div id="modal-js-example" class="modal">
+                                <div class="modal-background"></div>
+                                <div class="modal-card">
+                                    <header class="modal-card-head">
+                                        <p class="modal-card-title">Importancia</p>
+                                        <button class="delete" aria-label="close"></button>
+                                    </header>
+                                    <section class="modal-card-body">
+                                        <!-- Content ... -->
+                                        <p>
+                                            Ninguna es más importante que la otra, se complementan y necesitan
+                                            mutuamente para funcionar, ya que por una parte, los sitios web deben ser
+                                            bonitos y amigables y por la otra parte ese mismo sitio debe ser funcional y
+                                            debe poder realizar operaciones.
+                                        </p>
+                                        <p>
+                                            En el front-end se necesitan personas con capacidad creativa y en el
+                                            back-end se necesitan personas con muy buena lógica para resolver problemas.
+                                        </p>
+                                    </section>
+                                    <footer class="modal-card-foot">
+                                        <button class="button is-success">Aceptar</button>
+                                        <button class="button">Cancelar</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <button class="button is-success js-modal-trigger" data-target="modal-js-example">
+                                Importancia
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by2">
+                        <img src="./img/front.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content ">
+                    <div class="media is-half">
+                        <div class="media-center">
+                        </div>
+                        <div id="modal-js-example2" class="modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-card">
+                                <header class="modal-card-head">
+                                    <p class="modal-card-title">Diferencias</p>
+                                    <button class="delete" aria-label="close"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                    <!-- Content ... -->
+                                    <p>
+                                        Considera que una web se conforma por una gran variedad de documentos que se
+                                        relacionan entre ellos por medio de enlaces, lo que significa que si quieres
+                                        entrar a una web y escribes la dirección URL en el navegador, se traduce como
+                                        que estás solicitando que se muestre dicha página web.
+                                    <P>
+                                        Lo siguiente que hará el dispositivo es verificar qué servidor de software tiene
+                                        el sitio. El servidor recibe esta información, verifica la petición que hizo y
+                                        te permite ejecutar la acción.
+                                    </P>
+                                    <p>
+                                        En ocasiones, se puede presentar el caso de que no se requiere una conexión a la
+                                        base de datos, por ejemplo, accedes a una página y cuando inicias sesión, se
+                                        hace de manera automática una petición que conecta a la base de datos para
+                                        verificar los accesos y la suscripción que se tiene, es allí donde el backend
+                                        devuelve la respuesta al servidor.
+                                    </p>
+                                    <p>Prueba del proyecto</p>
+                                    <p>Desarrollo ‘front-end’ y ‘back-end’</p>
+                                </section>
+                                <footer class="modal-card-foot">
+                                    <button class="button is-success">Aceptar</button>
+                                    <button class="button">Cancelar</button>
+                                </footer>
+                            </div>
+                        </div>
+                        <button class="button is-success js-modal-trigger" data-target="modal-js-example2">
+                            Diferencias
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            </div>
+      </section>
+
+
+
+    <footer class="footer footer-color">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Creado </strong> por <a href="https://github.com/DidioArbey/">Didio Arbey Perdomo Castillo</a>.
+                <br> Diplomado en Desarrollo Full Stack
+                <a href="https://moodleoit1.org/my/">OIT</a>. Organizacion Internacional del Trabajo <br>
+                Docente <a href=""> Johan Stived Osorio Velez</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

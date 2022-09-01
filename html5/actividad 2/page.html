@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <!-- javscripr -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron text-center">
+            <h1>Peliculas OIT</h1>
+            <p>aplicacion web para ver catalogo de peliculas</p>
+            
+        </div>
+
+    </header>
+    <!-- catalogos -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" style="background-color:lavender;">
+                <div class="container">
+                    <h2>Aventura</h2>
+                    <p>Peliculas que sobre salen de lo natural pero que te grantizan entretenimiento</p>
+                    <center><a href="./Aventura.html"> <img src="./img/catalogo/aventura/3.PNG" class="img-thumbnail"
+                                alt="Cinque Terre" width="304" height="236"></a></center>
+                </div>
+            </div>
+            <div class="col" style="background-color:orange;">
+                <div class="container">
+                    <h2>Super Heroes</h2>
+                    <p>Aqui encontraras las peliculas de tus super heroes favoritos</p>
+                    <center><a href="./super.html"><img src="./img/catalogo/Superheroes/avenger2.PNG"
+                                class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></a></center>
+                </div>
+            </div>
+            <div class="col" style="background-color:lavender;">
+                <div class="container">
+                    <h2>Animado</h2>
+                    <p>Para todos aquellos que quieren ver peliculas animadas para todo publico</p>
+                    <center><a href="./animadas.html"><img src="./img/catalogo/animado/coco.PNG" class="img-thumbnail"
+                                alt="Cinque Terre" width="304" height="236"></a> </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/catalogo/avatar.png" alt="Los Angeles" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/catalogo/dbzs.jpg" alt="Chicago" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/catalogo/dr.jpg" alt="New York" width="1100" height="500">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+</body>
+
+</html>
